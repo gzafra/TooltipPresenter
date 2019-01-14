@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B606D10621ED048C0072FFDB /* TooltipPresenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D7A34721BE900B0063D286 /* TooltipPresenter.framework */; };
+		B6D7A31521BE8FF90063D286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D7A31421BE8FF90063D286 /* AppDelegate.swift */; };
+		B6D7A31721BE8FF90063D286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D7A31621BE8FF90063D286 /* ViewController.swift */; };
+		B6D7A31A21BE8FF90063D286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D7A31821BE8FF90063D286 /* Main.storyboard */; };
+		B6D7A31C21BE8FFB0063D286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D7A31B21BE8FFB0063D286 /* Assets.xcassets */; };
+		B6D7A31F21BE8FFB0063D286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D7A31D21BE8FFB0063D286 /* LaunchScreen.storyboard */; };
+		B6D7A32A21BE8FFC0063D286 /* TooltipPresenterDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D7A32921BE8FFC0063D286 /* TooltipPresenterDemoTests.swift */; };
+		B6D7A33521BE8FFC0063D286 /* TooltipPresenterDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D7A33421BE8FFC0063D286 /* TooltipPresenterDemoUITests.swift */; };
+		B6D7A35921BE916A0063D286 /* LocalizedResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D7A35821BE916A0063D286 /* LocalizedResources.swift */; };
+		B6D7A36121C8FBB30063D286 /* DemoTooltipTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D7A36021C8FBB30063D286 /* DemoTooltipTypes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6D7A32621BE8FFC0063D286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D7A30921BE8FF90063D286 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D7A31021BE8FF90063D286;
+			remoteInfo = TooltipPresenterDemo;
+		};
+		B6D7A33121BE8FFC0063D286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D7A30921BE8FF90063D286 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D7A31021BE8FF90063D286;
+			remoteInfo = TooltipPresenterDemo;
+		};
+		B6D7A34621BE900B0063D286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D7A34221BE900B0063D286 /* TooltipPresenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6D7A2FC21BE8FB60063D286;
+			remoteInfo = TooltipPresenter;
+		};
+		B6D7A34821BE901A0063D286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D7A34221BE900B0063D286 /* TooltipPresenter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D7A2FB21BE8FB60063D286;
+			remoteInfo = TooltipPresenter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B6D7A31121BE8FF90063D286 /* TooltipPresenterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TooltipPresenterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D7A31421BE8FF90063D286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B6D7A31621BE8FF90063D286 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B6D7A31921BE8FF90063D286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6D7A31B21BE8FFB0063D286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6D7A31E21BE8FFB0063D286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6D7A32021BE8FFB0063D286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D7A32521BE8FFC0063D286 /* TooltipPresenterDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TooltipPresenterDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D7A32921BE8FFC0063D286 /* TooltipPresenterDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipPresenterDemoTests.swift; sourceTree = "<group>"; };
+		B6D7A32B21BE8FFC0063D286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D7A33021BE8FFC0063D286 /* TooltipPresenterDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TooltipPresenterDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D7A33421BE8FFC0063D286 /* TooltipPresenterDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipPresenterDemoUITests.swift; sourceTree = "<group>"; };
+		B6D7A33621BE8FFC0063D286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D7A34221BE900B0063D286 /* TooltipPresenter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TooltipPresenter.xcodeproj; path = ../TooltipPresenter/TooltipPresenter.xcodeproj; sourceTree = "<group>"; };
+		B6D7A35821BE916A0063D286 /* LocalizedResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedResources.swift; sourceTree = "<group>"; };
+		B6D7A36021C8FBB30063D286 /* DemoTooltipTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTooltipTypes.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6D7A30E21BE8FF90063D286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B606D10621ED048C0072FFDB /* TooltipPresenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D7A32221BE8FFC0063D286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D7A32D21BE8FFC0063D286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B606D10521ED048C0072FFDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6D7A30821BE8FF90063D286 = {
+			isa = PBXGroup;
+			children = (
+				B6D7A34221BE900B0063D286 /* TooltipPresenter.xcodeproj */,
+				B6D7A31321BE8FF90063D286 /* TooltipPresenterDemo */,
+				B6D7A32821BE8FFC0063D286 /* TooltipPresenterDemoTests */,
+				B6D7A33321BE8FFC0063D286 /* TooltipPresenterDemoUITests */,
+				B6D7A31221BE8FF90063D286 /* Products */,
+				B606D10521ED048C0072FFDB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B6D7A31221BE8FF90063D286 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6D7A31121BE8FF90063D286 /* TooltipPresenterDemo.app */,
+				B6D7A32521BE8FFC0063D286 /* TooltipPresenterDemoTests.xctest */,
+				B6D7A33021BE8FFC0063D286 /* TooltipPresenterDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6D7A31321BE8FF90063D286 /* TooltipPresenterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B6D7A35A21BE918E0063D286 /* Domain */,
+				B6D7A35721BE915A0063D286 /* Presentation */,
+				B6D7A32021BE8FFB0063D286 /* Info.plist */,
+			);
+			path = TooltipPresenterDemo;
+			sourceTree = "<group>";
+		};
+		B6D7A32821BE8FFC0063D286 /* TooltipPresenterDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6D7A32921BE8FFC0063D286 /* TooltipPresenterDemoTests.swift */,
+				B6D7A32B21BE8FFC0063D286 /* Info.plist */,
+			);
+			path = TooltipPresenterDemoTests;
+			sourceTree = "<group>";
+		};
+		B6D7A33321BE8FFC0063D286 /* TooltipPresenterDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6D7A33421BE8FFC0063D286 /* TooltipPresenterDemoUITests.swift */,
+				B6D7A33621BE8FFC0063D286 /* Info.plist */,
+			);
+			path = TooltipPresenterDemoUITests;
+			sourceTree = "<group>";
+		};
+		B6D7A34321BE900B0063D286 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6D7A34721BE900B0063D286 /* TooltipPresenter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6D7A35721BE915A0063D286 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B6D7A35B21BE91960063D286 /* Resources */,
+				B6D7A31621BE8FF90063D286 /* ViewController.swift */,
+				B6D7A35821BE916A0063D286 /* LocalizedResources.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B6D7A35A21BE918E0063D286 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B6D7A31421BE8FF90063D286 /* AppDelegate.swift */,
+				B6D7A36021C8FBB30063D286 /* DemoTooltipTypes.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B6D7A35B21BE91960063D286 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6D7A31B21BE8FFB0063D286 /* Assets.xcassets */,
+				B6D7A31D21BE8FFB0063D286 /* LaunchScreen.storyboard */,
+				B6D7A31821BE8FF90063D286 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6D7A31021BE8FF90063D286 /* TooltipPresenterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D7A33921BE8FFC0063D286 /* Build configuration list for PBXNativeTarget "TooltipPresenterDemo" */;
+			buildPhases = (
+				B6D7A30D21BE8FF90063D286 /* Sources */,
+				B6D7A30E21BE8FF90063D286 /* Frameworks */,
+				B6D7A30F21BE8FF90063D286 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6D7A34921BE901A0063D286 /* PBXTargetDependency */,
+			);
+			name = TooltipPresenterDemo;
+			productName = TooltipPresenterDemo;
+			productReference = B6D7A31121BE8FF90063D286 /* TooltipPresenterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6D7A32421BE8FFC0063D286 /* TooltipPresenterDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D7A33C21BE8FFC0063D286 /* Build configuration list for PBXNativeTarget "TooltipPresenterDemoTests" */;
+			buildPhases = (
+				B6D7A32121BE8FFC0063D286 /* Sources */,
+				B6D7A32221BE8FFC0063D286 /* Frameworks */,
+				B6D7A32321BE8FFC0063D286 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6D7A32721BE8FFC0063D286 /* PBXTargetDependency */,
+			);
+			name = TooltipPresenterDemoTests;
+			productName = TooltipPresenterDemoTests;
+			productReference = B6D7A32521BE8FFC0063D286 /* TooltipPresenterDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B6D7A32F21BE8FFC0063D286 /* TooltipPresenterDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D7A33F21BE8FFC0063D286 /* Build configuration list for PBXNativeTarget "TooltipPresenterDemoUITests" */;
+			buildPhases = (
+				B6D7A32C21BE8FFC0063D286 /* Sources */,
+				B6D7A32D21BE8FFC0063D286 /* Frameworks */,
+				B6D7A32E21BE8FFC0063D286 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6D7A33221BE8FFC0063D286 /* PBXTargetDependency */,
+			);
+			name = TooltipPresenterDemoUITests;
+			productName = TooltipPresenterDemoUITests;
+			productReference = B6D7A33021BE8FFC0063D286 /* TooltipPresenterDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6D7A30921BE8FF90063D286 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Guillermo Zafra";
+				TargetAttributes = {
+					B6D7A31021BE8FF90063D286 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					B6D7A32421BE8FFC0063D286 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B6D7A31021BE8FF90063D286;
+					};
+					B6D7A32F21BE8FFC0063D286 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B6D7A31021BE8FF90063D286;
+					};
+				};
+			};
+			buildConfigurationList = B6D7A30C21BE8FF90063D286 /* Build configuration list for PBXProject "TooltipPresenterDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6D7A30821BE8FF90063D286;
+			productRefGroup = B6D7A31221BE8FF90063D286 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B6D7A34321BE900B0063D286 /* Products */;
+					ProjectRef = B6D7A34221BE900B0063D286 /* TooltipPresenter.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B6D7A31021BE8FF90063D286 /* TooltipPresenterDemo */,
+				B6D7A32421BE8FFC0063D286 /* TooltipPresenterDemoTests */,
+				B6D7A32F21BE8FFC0063D286 /* TooltipPresenterDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B6D7A34721BE900B0063D286 /* TooltipPresenter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TooltipPresenter.framework;
+			remoteRef = B6D7A34621BE900B0063D286 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6D7A30F21BE8FF90063D286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D7A31F21BE8FFB0063D286 /* LaunchScreen.storyboard in Resources */,
+				B6D7A31C21BE8FFB0063D286 /* Assets.xcassets in Resources */,
+				B6D7A31A21BE8FF90063D286 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D7A32321BE8FFC0063D286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D7A32E21BE8FFC0063D286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6D7A30D21BE8FF90063D286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D7A35921BE916A0063D286 /* LocalizedResources.swift in Sources */,
+				B6D7A31721BE8FF90063D286 /* ViewController.swift in Sources */,
+				B6D7A36121C8FBB30063D286 /* DemoTooltipTypes.swift in Sources */,
+				B6D7A31521BE8FF90063D286 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D7A32121BE8FFC0063D286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D7A32A21BE8FFC0063D286 /* TooltipPresenterDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D7A32C21BE8FFC0063D286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D7A33521BE8FFC0063D286 /* TooltipPresenterDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6D7A32721BE8FFC0063D286 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D7A31021BE8FF90063D286 /* TooltipPresenterDemo */;
+			targetProxy = B6D7A32621BE8FFC0063D286 /* PBXContainerItemProxy */;
+		};
+		B6D7A33221BE8FFC0063D286 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D7A31021BE8FF90063D286 /* TooltipPresenterDemo */;
+			targetProxy = B6D7A33121BE8FFC0063D286 /* PBXContainerItemProxy */;
+		};
+		B6D7A34921BE901A0063D286 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TooltipPresenter;
+			targetProxy = B6D7A34821BE901A0063D286 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6D7A31821BE8FF90063D286 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6D7A31921BE8FF90063D286 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6D7A31D21BE8FFB0063D286 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6D7A31E21BE8FFB0063D286 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6D7A33721BE8FFC0063D286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B6D7A33821BE8FFC0063D286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6D7A33A21BE8FFC0063D286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TooltipPresenterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gzafra.TooltipPresenterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6D7A33B21BE8FFC0063D286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TooltipPresenterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gzafra.TooltipPresenterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B6D7A33D21BE8FFC0063D286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TooltipPresenterDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gzafra.TooltipPresenterDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TooltipPresenterDemo.app/TooltipPresenterDemo";
+			};
+			name = Debug;
+		};
+		B6D7A33E21BE8FFC0063D286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TooltipPresenterDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gzafra.TooltipPresenterDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TooltipPresenterDemo.app/TooltipPresenterDemo";
+			};
+			name = Release;
+		};
+		B6D7A34021BE8FFC0063D286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TooltipPresenterDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gzafra.TooltipPresenterDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TooltipPresenterDemo;
+			};
+			name = Debug;
+		};
+		B6D7A34121BE8FFC0063D286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TooltipPresenterDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gzafra.TooltipPresenterDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TooltipPresenterDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6D7A30C21BE8FF90063D286 /* Build configuration list for PBXProject "TooltipPresenterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D7A33721BE8FFC0063D286 /* Debug */,
+				B6D7A33821BE8FFC0063D286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D7A33921BE8FFC0063D286 /* Build configuration list for PBXNativeTarget "TooltipPresenterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D7A33A21BE8FFC0063D286 /* Debug */,
+				B6D7A33B21BE8FFC0063D286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D7A33C21BE8FFC0063D286 /* Build configuration list for PBXNativeTarget "TooltipPresenterDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D7A33D21BE8FFC0063D286 /* Debug */,
+				B6D7A33E21BE8FFC0063D286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D7A33F21BE8FFC0063D286 /* Build configuration list for PBXNativeTarget "TooltipPresenterDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D7A34021BE8FFC0063D286 /* Debug */,
+				B6D7A34121BE8FFC0063D286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6D7A30921BE8FF90063D286 /* Project object */;
+}
