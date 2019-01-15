@@ -9,6 +9,6 @@
 import Foundation
 
 public enum TooltipDisplayMode {
-    case rect(cornerRadius: CGFloat)
+    case rect
     case circle
 }

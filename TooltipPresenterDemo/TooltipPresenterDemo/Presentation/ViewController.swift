@@ -30,7 +30,7 @@ class ViewController: UIViewController {
 
     func presentButtonTooltip() {
         let tooltip = Tooltip(type: DemoTooltipType.testButton,
-                              displayMode: TooltipDisplayMode.rect(cornerRadius: 5),
+                              displayMode: TooltipDisplayMode.rect,
                               aligment: NSTextAlignment.center,
                               callback: {
                                 

@@ -23,6 +23,7 @@ class TooltipView: UIView {
         var tipFont: UIFont = UIFont.systemFont(ofSize: 26, weight: UIFont.Weight.bold)
         var buttonTextColor: UIColor = UIColor.white.withAlphaComponent(0.5)
         var tipTextColor: UIColor = UIColor.white
+        var maskSpacing: CGFloat = 5.0
     }
     
     // MARK: - Properties
@@ -42,8 +43,8 @@ class TooltipView: UIView {
         switch tooltip.displayMode {
         case .circle:
             setupCircleOverlay()
-        case .rect(let cornerRadius):
-            setupRectOverlay(with: cornerRadius)
+        case .rect:
+            setupRectOverlay()
         }
         
         setupContainer()
@@ -93,13 +94,15 @@ class TooltipView: UIView {
         layer.addSublayer(borderLayer)
     }
     
-    private func setupRectOverlay(with cornerRadius: CGFloat) {
+    private func setupRectOverlay() {
         backgroundColor = layout.overlayColor
         
+        let maskedArea = passingThroughArea.rectByAdding(margin: layout.maskSpacing)
         // Masked area
         let path = CGMutablePath()
         path.addRect(CGRect(origin: .zero, size: frame.size))
-        path.addRoundedRect(in: passingThroughArea, cornerWidth: cornerRadius, cornerHeight: cornerRadius)
+        let cornerRadius = min(maskedArea.size.width, maskedArea.size.height) * 0.2
+        path.addRoundedRect(in: maskedArea, cornerWidth: cornerRadius, cornerHeight: cornerRadius)
         let maskLayer = CAShapeLayer()
         maskLayer.backgroundColor = UIColor.black.cgColor
         maskLayer.path = path
@@ -110,12 +113,13 @@ class TooltipView: UIView {
         
         // Highlighted border
         let borderLayer = CAShapeLayer()
-        borderLayer.path = CGPath(roundedRect: CGRect(x: passingThroughArea.origin.x-layout.highlightWidth,
-                                                      y: passingThroughArea.origin.y-layout.highlightWidth,
-                                                      width: passingThroughArea.size.width+layout.highlightWidth*2,
-                                                      height: passingThroughArea.size.height+layout.highlightWidth*2),
-                                  cornerWidth: cornerRadius+layout.highlightWidth,
-                                  cornerHeight: cornerRadius+layout.highlightWidth,
+        let highlightCornerRadius = min(maskedArea.size.width+layout.highlightWidth, maskedArea.size.height+layout.highlightWidth) * 0.2
+        borderLayer.path = CGPath(roundedRect: CGRect(x: maskedArea.origin.x-layout.highlightWidth,
+                                                      y: maskedArea.origin.y-layout.highlightWidth,
+                                                      width: maskedArea.size.width+layout.highlightWidth*2,
+                                                      height: maskedArea.size.height+layout.highlightWidth*2),
+                                  cornerWidth: highlightCornerRadius,
+                                  cornerHeight: highlightCornerRadius,
                                   transform: nil)
         borderLayer.fillRule = CAShapeLayerFillRule.evenOdd
         borderLayer.fillColor = layout.highlightColor.cgColor

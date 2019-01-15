@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B606D11121EE09450072FFDB /* CGRectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B606D11021EE09440072FFDB /* CGRectExtensions.swift */; };
 		B6D7A30121BE8FB60063D286 /* TooltipPresenter.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D7A2FF21BE8FB60063D286 /* TooltipPresenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6D7A34E21BE90B60063D286 /* TooltipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D7A34D21BE90B60063D286 /* TooltipViewController.swift */; };
 		B6D7A35021BE90D70063D286 /* TooltipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D7A34F21BE90D70063D286 /* TooltipView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B606D11021EE09440072FFDB /* CGRectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectExtensions.swift; sourceTree = "<group>"; };
 		B6D7A2FC21BE8FB60063D286 /* TooltipPresenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TooltipPresenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D7A2FF21BE8FB60063D286 /* TooltipPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TooltipPresenter.h; sourceTree = "<group>"; };
 		B6D7A30021BE8FB60063D286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B606D10F21EE09320072FFDB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B606D11021EE09440072FFDB /* CGRectExtensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		B6D7A2F221BE8FB60063D286 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +84,7 @@
 		B6D7A34A21BE90830063D286 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B606D10F21EE09320072FFDB /* Utils */,
 				B6D7A34D21BE90B60063D286 /* TooltipViewController.swift */,
 				B6D7A34F21BE90D70063D286 /* TooltipView.swift */,
 				B6D7A36221C8FFDA0063D286 /* TooltipLayout.swift */,
@@ -183,6 +194,7 @@
 				B6D7A35F21BE93D40063D286 /* TooltipError.swift in Sources */,
 				B6D7A35021BE90D70063D286 /* TooltipView.swift in Sources */,
 				B6D7A35421BE91160063D286 /* TooltipType.swift in Sources */,
+				B606D11121EE09450072FFDB /* CGRectExtensions.swift in Sources */,
 				B6D7A34E21BE90B60063D286 /* TooltipViewController.swift in Sources */,
 				B6D7A35221BE91000063D286 /* Tooltip.swift in Sources */,
 				B6D7A35D21BE91C00063D286 /* TooltipManager.swift in Sources */,

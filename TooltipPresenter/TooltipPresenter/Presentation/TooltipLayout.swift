@@ -19,4 +19,5 @@ public protocol TooltipLayout {
     var buttonTextColor: UIColor { get }
     var tipFont: UIFont { get }
     var tipTextColor: UIColor { get }
+    var maskSpacing: CGFloat { get }
 }
