@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B606D10621ED048C0072FFDB /* TooltipPresenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D7A34721BE900B0063D286 /* TooltipPresenter.framework */; };
+		B606D10821ED0E490072FFDB /* LocalizedResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = B606D10721ED0E490072FFDB /* LocalizedResources.swift */; };
 		B6D7A31521BE8FF90063D286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D7A31421BE8FF90063D286 /* AppDelegate.swift */; };
 		B6D7A31721BE8FF90063D286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D7A31621BE8FF90063D286 /* ViewController.swift */; };
 		B6D7A31A21BE8FF90063D286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D7A31821BE8FF90063D286 /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		B6D7A31F21BE8FFB0063D286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D7A31D21BE8FFB0063D286 /* LaunchScreen.storyboard */; };
 		B6D7A32A21BE8FFC0063D286 /* TooltipPresenterDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D7A32921BE8FFC0063D286 /* TooltipPresenterDemoTests.swift */; };
 		B6D7A33521BE8FFC0063D286 /* TooltipPresenterDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D7A33421BE8FFC0063D286 /* TooltipPresenterDemoUITests.swift */; };
-		B6D7A35921BE916A0063D286 /* LocalizedResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D7A35821BE916A0063D286 /* LocalizedResources.swift */; };
 		B6D7A36121C8FBB30063D286 /* DemoTooltipTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D7A36021C8FBB30063D286 /* DemoTooltipTypes.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B606D10721ED0E490072FFDB /* LocalizedResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedResources.swift; sourceTree = "<group>"; };
 		B6D7A31121BE8FF90063D286 /* TooltipPresenterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TooltipPresenterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D7A31421BE8FF90063D286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6D7A31621BE8FF90063D286 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +66,6 @@
 		B6D7A33421BE8FFC0063D286 /* TooltipPresenterDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipPresenterDemoUITests.swift; sourceTree = "<group>"; };
 		B6D7A33621BE8FFC0063D286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6D7A34221BE900B0063D286 /* TooltipPresenter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TooltipPresenter.xcodeproj; path = ../TooltipPresenter/TooltipPresenter.xcodeproj; sourceTree = "<group>"; };
-		B6D7A35821BE916A0063D286 /* LocalizedResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedResources.swift; sourceTree = "<group>"; };
 		B6D7A36021C8FBB30063D286 /* DemoTooltipTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTooltipTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,7 +165,7 @@
 			children = (
 				B6D7A35B21BE91960063D286 /* Resources */,
 				B6D7A31621BE8FF90063D286 /* ViewController.swift */,
-				B6D7A35821BE916A0063D286 /* LocalizedResources.swift */,
+				B606D10721ED0E490072FFDB /* LocalizedResources.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -337,8 +337,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6D7A35921BE916A0063D286 /* LocalizedResources.swift in Sources */,
 				B6D7A31721BE8FF90063D286 /* ViewController.swift in Sources */,
+				B606D10821ED0E490072FFDB /* LocalizedResources.swift in Sources */,
 				B6D7A36121C8FBB30063D286 /* DemoTooltipTypes.swift in Sources */,
 				B6D7A31521BE8FF90063D286 /* AppDelegate.swift in Sources */,
 			);

@@ -46,8 +46,7 @@ public class TooltipManager {
         guard !tooltip.type.hasShown, presentedTooltipController == nil else { return }
         
         guard let vc = createTooltipViewController(with: tooltip, highlighting: rect) else {
-            // TODO: Throw error
-            return
+            throw TooltipError.outOfBounds
         }
         
         presentedTooltipController = vc
@@ -91,9 +90,6 @@ extension TooltipManager: TooltipViewControllerDelegate {
             hideTooltip(activeTooltip)
             self.activeTooltip = nil
         }
-
-        // Set to not show again
-        UserDefaults.standard.set(true, forKey: tooltip.type.key)
     }
     
     func didAction(tooltip: Tooltip) {

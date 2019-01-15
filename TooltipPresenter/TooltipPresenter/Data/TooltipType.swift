@@ -11,7 +11,7 @@ import Foundation
 public protocol TooltipType {
     var helpText: String { get }
     var buttonText: String { get }
-    var hasShown: Bool { get }
+    var hasShown: Bool { get set }
     var key: String { get }
 }
 

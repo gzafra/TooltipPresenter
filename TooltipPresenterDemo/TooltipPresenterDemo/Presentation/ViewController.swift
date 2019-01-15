@@ -23,7 +23,9 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        presentButtonTooltip()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { 
+            self.presentButtonTooltip()
+        }
     }
 
     func presentButtonTooltip() {
@@ -52,7 +54,8 @@ fileprivate extension UIAlertController {
 
 extension ViewController: TooltipManagerDelegate {
     func didDismiss(tooltip: Tooltip) {
-        
+        // Uncomment and edit to not display tooltip again when desired
+//        tooltip.type.hasShown = true
     }
     
     func shouldDisplay(tooltip: Tooltip) -> Bool {

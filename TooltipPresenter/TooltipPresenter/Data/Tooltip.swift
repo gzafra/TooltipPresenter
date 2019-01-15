@@ -11,10 +11,10 @@ import Foundation
 public typealias TooltipCallback = (()->())
 
 public struct Tooltip {
-    let type: TooltipType
+    public let type: TooltipType
     let displayMode: TooltipDisplayMode
     let aligment: NSTextAlignment
-    let callback: TooltipCallback?
+    public let callback: TooltipCallback?
     
     public init(type: TooltipType, displayMode: TooltipDisplayMode, aligment: NSTextAlignment, callback: TooltipCallback? = nil) {
         self.type = type

@@ -21,11 +21,11 @@ enum DemoTooltipType: String, TooltipType  {
     var helpText: String {
         switch self {
         case .testButton:
-            return LocalizedResources.sellYourItems
+            return LocalizedResources.thisIsTestButton
         case .tabBarLeftItem:
-            return LocalizedResources.findFashion
+            return LocalizedResources.thisIsOneSection
         case .tabBarRightItem:
-            return LocalizedResources.favouriteItems
+            return LocalizedResources.thisIsAnotherSection
         }
     }
     
@@ -36,6 +36,9 @@ enum DemoTooltipType: String, TooltipType  {
     var hasShown: Bool {
         get {
             return UserDefaults.standard.bool(forKey: self.rawValue)
+        }
+        set {
+            UserDefaults.standard.set(hasShown, forKey: self.rawValue)
         }
     }
 }
